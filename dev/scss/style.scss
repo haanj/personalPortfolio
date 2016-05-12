@@ -1,0 +1,56 @@
+/*$gray: #BFBAA8;*/
+/*$blue: #00398E;*/
+/*$white: #FFF;*/
+/*$pink: #F2DCC2;*/
+/*$tan: #A67F5D;*/
+/*$brown: #594336;*/
+/*$dark-grey: #333;*/
+
+
+$dark-gray: #282828;
+$light-gray: #DADADA;
+$white: #F4F4F4;
+$dark-blue: #101A3F;
+$light-blue: #2F3A71;
+
+$font-color: $dark-gray;
+
+body {
+	background-image: url(../media/background-fog.jpg);	
+	background-size: cover;
+	background-attachment: fixed;
+
+	a {
+		color: $white;
+	}
+
+	a:hover {
+		color: $light-gray;
+	}
+
+	.text {
+		color: $font-color;	
+	}
+
+	.jumbotron {
+		background-color: $dark-gray;
+		.text{
+			color: $light-gray;
+		}
+	}
+
+	.caption {
+		a {
+			color: $light-blue;	
+		}
+		a:hover {
+			color: $dark-blue;	
+		}
+	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;	
+	}
+
+}
+
