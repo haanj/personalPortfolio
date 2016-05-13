@@ -41,6 +41,21 @@ body {
 		}
 	}
 
+	.pitch {
+		color: $font-color;	
+	}
+
+	.skills {
+		color: $font-color;
+
+		h3 {
+			text-align: center;
+		}
+		.row {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
 	.caption {
 		a {
 			color: $light-blue;	
