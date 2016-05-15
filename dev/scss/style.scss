@@ -37,25 +37,52 @@ body {
 	.jumbotron {
 		background-color: $dark-gray;
 		.text{
-			color: $light-gray;
+			color: $white;
 		}
 	}
 
-	.pitch {
-		color: $font-color;	
+	.nav {
+		border-bottom: none;
+		background-color: $light-gray;	
+		a {
+			color: $font-color;
+		}
+		.active {
+			a {
+				color: $font-color;
+				background-color: $white;
+			}
+		}
+	
 	}
 
-	.skills {
+	.projects {
+		border-top: none;
 		color: $font-color;
 
 		h3 {
 			text-align: center;
+		}
+
+	}
+
+	.skills {
+		border-top: none;
+		color: $font-color;
+
+		h3 {
+			text-align: center;
+		}
+		.pitch {
+			text-align: left;
+			color: $font-color;	
 		}
 		.row {
 			display: flex;
 			justify-content: space-around;
 		}
 	}
+
 	.caption {
 		a {
 			color: $light-blue;	

@@ -22,11 +22,14 @@
   </header>
 
   <main class="container">
-    <section class="well">
-      <h3 class="pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies.</h3>
-    </section>
+    <nav class="nav nav-tabs nav-justified">
+      <li title="Projects" role="presentation" class="active"><a v-on:click="makeActive('projects')" href="#">Projects</a></li>
+      <li title="About Me" role="presentation"><a v-on:click="makeActive('skills')" href="#">About</a></li>
+      <li title="Coming soon!" role="presentation" class="disabled"><a href="#">Blog</a></li>
+    </nav>
 
-    <section class="well skills">
+    <section v-show="isActive('skills')" class="well skills">
+      <h3 class="pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies.</h3>
       <h3>Skills</h3>
       <section class="row">
         <div class="col-md-2">
@@ -58,21 +61,28 @@
       </section>
     </section>
 
-    <section class="row">
-      <div class="col-md-4" v-for="project in projects">
-        <div class="thumbnail"> 
-          <img v-bind:src="project.imageUrl"/>
-          <div class="caption">
-            <h4 class="text">
-              <a v-bind:href="project.githubUrl" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-              {{ project.name }}
-            </h4>
-            <p class="text">{{ project.description }}</p>
+    <section v-show="isActive('projects')" class="projects">
+      <div class="well">
+        <h3>Projects</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4" v-for="project in projects">
+          <div class="thumbnail"> 
+            <img v-bind:src="project.imageUrl"/>
+            <div class="caption">
+              <h4 class="text">
+                <a v-bind:href="project.githubUrl" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                {{ project.name }}
+              </h4>
+              <p class="text">{{ project.description }}</p>
+          </div>
         </div>
       </div>
     </section>
+      
   </main>
  
   <script src="https://use.fontawesome.com/6d6680158d.js"></script>
