@@ -24,6 +24,7 @@ body {
 
 	a {
 		color: $white;
+		transition: all .5s ease-in-out;
 	}
 
 	a:hover {
