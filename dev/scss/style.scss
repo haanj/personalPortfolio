@@ -24,7 +24,7 @@ body {
 
 	a {
 		color: $white;
-		transition: all .5s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 
 	a:hover {
@@ -42,19 +42,26 @@ body {
 		}
 	}
 
-	.nav {
+	.nav.nav-tabs.nav-justified {
 		border-bottom: none;
 		background-color: $light-gray;	
 		a {
 			color: $font-color;
 		}
-		.active {
-			a {
-				color: $font-color;
-				background-color: $white;
-			}
+	}
+	.nav-tab li.active {
+		border-bottom: none;
+		background-color: $white;
+		a {
+			color: $font-color;
 		}
+	}
 	
+	.well {
+		border-top: none;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		background-color: $white;	
 	}
 
 	.projects {
@@ -63,6 +70,9 @@ body {
 
 		h3 {
 			text-align: center;
+		}
+		.thumbnail {
+			background-color: $white;
 		}
 
 	}
