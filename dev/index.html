@@ -24,13 +24,12 @@
   <main class="container">
     <nav class="nav nav-tabs nav-justified">
       <li title="Projects" role="presentation" v-bind:class="{ 'active': isActive('projects') }"><a v-on:click="makeActive('projects')" href="#">Projects</a></li>
-      <li title="About Me" role="presentation" v-bind:class="{ 'active': isActive('skills') }"><a v-on:click="makeActive('skills')" href="#">Skills</a></li>
+      <li title="About Me" role="presentation" v-bind:class="{ 'active': isActive('profile') }"><a v-on:click="makeActive('profile')" href="#">Profile</a></li>
       <!--<li title="Coming soon!" role="presentation" class="disabled"><a href="#">Blog</a></li>-->
     </nav>
 
     <section v-show="isActive('projects')" class="projects">
       <div class="well">
-        <h3>Projects</h3>
         <div class="row">
           <div class="col-md-4" v-for="project in projects">
             <div class="thumbnail"> 
@@ -51,39 +50,48 @@
 
     </section>
       
-    <section v-show="isActive('skills')" class="well skills">
-      <h3 class="pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies.</h3>
-      <h3>Skills</h3>
-      <section class="row">
-        <div class="col-md-2">
-          <h4>Proficient</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>Angular</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>jQuery</li>
-            <li>Git</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4>Intermediate</h4>
-          <ul>
-            <li>Vue</li>
-            <li>Gulp</li>
-            <li>Mocha/Chai</li>
-            <li>Protracto</li>
-            <li>SQL</li>
-            <li>No-SQL</li>
-            <li>SEO</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+    <section v-show="isActive('profile')" class="well skills">
 
+      <div class="row">
+        <div class="img-container col-md-4">
+          <img class="profile-img" src="media/profile.jpg">
+        </div>
+        
+        <article class="text col-md-8">
+          <h4 class="media-heading pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies.</h4>
+
+          <h3>Skills</h3>
+          <section class="row">
+            <div class="col-md-6">
+              <h4 class="skill-header">Proficient</h4>
+              <ul class="list-group">
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Node</li>
+                <li class="list-group-item">Express</li>
+                <li class="list-group-item">Angular</li>
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">jQuery</li>
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Linux</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h4 class="skill-header">Intermediate</h4>
+              <ul class="list-group">
+                <li class="list-group-item">Vue</li>
+                <li class="list-group-item">Gulp</li>
+                <li class="list-group-item">Mocha/Chai</li>
+                <li class="list-group-item">Protractor</li>
+                <li class="list-group-item">SQL</li>
+                <li class="list-group-item">No-SQL</li>
+                <li class="list-group-item">SEO</li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
   </main>
  
   <script src="https://use.fontawesome.com/6d6680158d.js"></script>
