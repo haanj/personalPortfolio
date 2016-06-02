@@ -1,15 +1,6 @@
 var vm = new Vue({
   el: '#app',
 
-  methods: {
-    isActive: function(tab) {
-      return tab == this.activeTab;
-    },
-    makeActive: function(tab) {
-      this.activeTab = tab;
-    }
-  },
-
   data: {
     activeTab: 'projects',
     smoke: 'hello vue',

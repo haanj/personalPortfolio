@@ -62,28 +62,22 @@ body {
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 		background-color: $white;	
-	}
-
-	.projects {
-		border-top: none;
-		color: $font-color;
-
-		h3 {
-			text-align: center;
-			margin-bottom: 1.5em;
-		}
-		.thumbnail {
-			background-color: $white;
-		}
-
+		margin-bottom: 100vh;
 	}
 
 	.skills {
 		border-top: none;
 		color: $font-color;
+		h2 {
+			text-align: center;
+		}
 
 		h3 {
 			text-align: center;
+		}
+		.img-container {
+			margin: auto;
+			margin-top: 2em;
 		}
 		.pitch {
 			text-align: justify;
@@ -101,9 +95,23 @@ body {
 		}
 	}
 
-	.img-container {
-		margin: auto;
+	.projects {
+		border-top: none;
+		color: $font-color;
+		h2 {
+			text-align: center;
+		}
+
+		h3 {
+			text-align: center;
+			margin-bottom: 1.5em;
+		}
+		.thumbnail {
+			background-color: $white;
+		}
+
 	}
+
 
 	.caption {
 		a {
