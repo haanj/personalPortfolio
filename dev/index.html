@@ -75,6 +75,9 @@
                 <a v-bind:href="project.githubUrl" target="_blank">
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
+                <a v-if="project.linkUrl" v-bind:href="project.linkUrl" target="_blank">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
                 {{ project.name }}
               </h4>
               <p class="text">{{ project.description }}</p>
@@ -86,7 +89,6 @@
   </main>
  
   <script src="https://use.fontawesome.com/6d6680158d.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>-->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.22/vue.min.js"></script>
   <script type="text/javascript" src="./js/app.js"></script>
   </body>

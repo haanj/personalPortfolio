@@ -2,9 +2,10 @@
 let gulp = require('gulp')
 let sass = require('gulp-sass')
 let del = require('del')
+let fs = require('fs')
 
 let jsPaths = ['dev/js/*.js']
-let htmlPaths = ['dev/*.html']
+let htmlPaths = ['dev/**/*.html']
 let scssPaths = ['dev/scss/*.scss']
 let mediaPaths = ['dev/media/*']
 let output = __dirname + '/public/'
@@ -38,13 +39,7 @@ gulp.task('copy-media', () => {
     .pipe(gulp.dest(output + 'media'))
 })
 
-gulp.task('copy-projects', () => {
-  del.sync([output + 'coffee'])
-  gulp.src('dev/projects/mockCafe/public/**')
-    .pipe(gulp.dest(output + 'coffee'))
-})
-
-gulp.task('copy-public', ['sass', 'copy-js', 'copy-projects', 'copy-html', 'copy-media'])
+gulp.task('copy-public', ['sass', 'copy-html', 'copy-media'])
 
 gulp.task('watch', () =>{
   gulp.watch(scssPaths, ['sass'])

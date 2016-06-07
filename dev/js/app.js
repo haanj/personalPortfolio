@@ -22,7 +22,15 @@ var vm = new Vue({
         description: "This is a command-line tool for manipulating non-palette .bmp images. It was written as an exercise to gain better understanding of computer bits. It is written entirely in JavaScript",
         imageUrl: "media/bitmapManipulation.png",
         githubUrl: "https://github.com/haanj/bitmapManipulation"
+      },
+      {
+        name: "Café Mitra",
+        description: "This is a simple, single-page website for a mock cafe business. I was just trying my hand at a simple, clean design. It's a simple static site, using HTML5, SCSS, and Twitter Bootstrap",
+        imageUrl: "media/coffee.png",
+        githubUrl: "https://github.com/haanj/mockCafe",
+        linkUrl: "/coffee/"
       }
+
     ]
   }
 });
