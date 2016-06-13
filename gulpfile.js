@@ -40,7 +40,7 @@ gulp.task('copy-media', () => {
 
 gulp.task('copy-projects', () => {
   del.sync([output + 'coffee'])
-  gulp.src('dev/projects/mockCafe/public/**')
+  gulp.src('dev/projects/coffee/public/**')
     .pipe(gulp.dest(output + 'coffee'))
 })
 

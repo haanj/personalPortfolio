@@ -1,0 +1,3 @@
+[submodule "dev/projects/coffee"]
+	path = dev/projects/coffee
+	url = https://github.com/haanj/mockCafe.git
