@@ -84,7 +84,6 @@ body {
 		.thumbnail {
 			background-color: $white;
 		}
-
 	}
 
 
@@ -101,5 +100,11 @@ body {
 		flex-wrap: wrap;	
 	}
 
+}
+
+@media (max-width: 768px) {
+	.icon {
+		font-size: 250%;
+	}
 }
 

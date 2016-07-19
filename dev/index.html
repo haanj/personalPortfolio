@@ -20,7 +20,7 @@
           <h1 class="text">Joshua Haan</h1>
           <h3 class="text">Web Developer</h3>
           <p class="media-heading pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies. I have two years experience in product management and web content creation (with strong SEO), and I have a knack for learning new technologies and tools quickly and efficiently.</p>
-          <h3>
+          <h3 class="icon">
             <a href="https://twitter.com/haan_joshua" title="Twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
             <a href="https://github.com/haanj/" title="GitHub" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/haanj" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -42,10 +42,10 @@
             <div class="caption">
               <h4 class="text">
                 <a v-bind:href="project.githubUrl" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
                 </a>
                 <a v-if="project.linkUrl" v-bind:href="project.linkUrl" target="_blank">
-                  <i class="fa fa-link" aria-hidden="true"></i>
+                  <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
                 </a>
                 {{ project.name }}
               </h4>
