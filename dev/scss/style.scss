@@ -106,7 +106,7 @@ body {
 	font-size: 250%;
 	margin-right: 5px;
 }
-@media (width: 768px) {
+@media (min-width: 768px) {
 	.icon {
 		font-size: 150%;
 	}
