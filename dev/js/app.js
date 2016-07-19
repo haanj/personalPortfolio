@@ -27,7 +27,7 @@ var vm = new Vue({
       },
       {
         name: "Resume",
-        href: "media/haanjResume.pdf",
+        href: "media/haanResume.pdf",
         icon: "fa fa-file-text"
       }
     ],
