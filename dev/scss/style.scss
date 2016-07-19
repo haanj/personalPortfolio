@@ -40,49 +40,19 @@ body {
 		.text{
 			color: $white;
 		}
-	}
-
-	.nav.nav-tabs.nav-justified {
-		border-bottom: none;
-		background-color: $light-gray;	
-		a {
-			color: $font-color;
-		}
-	}
-	.nav-tab li.active {
-		border-bottom: none;
-		background-color: $white;
-		a {
-			color: $font-color;
-		}
-	}
-	
-	.well {
-		border-top: none;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		background-color: $white;	
-		margin-bottom: 100vh;
-	}
-
-	.skills {
-		border-top: none;
-		color: $font-color;
-		h2 {
-			text-align: center;
-		}
-
-		h3 {
-			text-align: center;
-		}
 		.img-container {
 			margin: auto;
 			margin-top: 2em;
 		}
+		.profile-img {
+			width: 100%;
+			height: auto;
+			border: 2px solid $white;
+		}
 		.pitch {
 			text-align: justify;
 			padding-top: 1.5em;
-			color: $font-color;	
+			color: $white;	
 		}
 		.row {
 			display: flex;
@@ -90,9 +60,14 @@ body {
 			justify-content: space-around;
 			align-items: flex-start;
 		}
-		.skill-header {
-			text-align: center;
-		}
+	}
+
+	.well {
+		border-top: none;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		background-color: $white;	
+		margin-bottom: 100vh;
 	}
 
 	.projects {
@@ -124,10 +99,6 @@ body {
 	.row {
 		display: flex;
 		flex-wrap: wrap;	
-	}
-	.profile-img {
-		width: 100%;
-		height: auto;
 	}
 
 }

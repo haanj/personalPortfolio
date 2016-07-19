@@ -12,10 +12,10 @@ var vm = new Vue({
         githubUrl: "https://github.com/haanj/cfpm"
       },
       {
-        name: "Story Blocks",
-        description: "Story Blocks is a proof-of-concept for a new social-media platform. Utilizing new CSS features, Story Blocks displays images and articles on three dimensional spinning cubes, written in CSS. The app is a full MEAN-stack application, utilizing MongoDB, Express, Angular, and Node.",
-        imageUrl: "media/storyblocks.png",
-        githubUrl: "https://github.com/cube10/cube10"
+        name: "Character Backstory Generator",
+        description: "AngularJS app that generates random roleplaying game character backstories to inspire players. A pretty straightforward demonstration in modular AngularJS design, featuring Webpack, object oriented programming principals, and custom services, controllers, and directives. The design uses Twitter Bootstrap with overrides written in SCSS.",
+        imageUrl: "media/backstory.jpg",
+        githubUrl: "https://github.com/haanj/backstoryApp"
       },
       {
         name: "Bitmap Transformer",
@@ -25,7 +25,7 @@ var vm = new Vue({
       },
       {
         name: "Café Mitra",
-        description: "This is a simple, single-page website for a mock cafe business. I was just trying my hand at a simple, clean design. It's a simple static site, using HTML5, SCSS, and Twitter Bootstrap",
+        description: "This is a single-page website for a mock cafe business. I was just trying my hand at a simple, clean design. It's a simple static site, using HTML5, SCSS, and Twitter Bootstrap",
         imageUrl: "media/coffee.png",
         githubUrl: "https://github.com/haanj/mockCafe",
         linkUrl: "/coffee/"
