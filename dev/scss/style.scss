@@ -102,9 +102,13 @@ body {
 
 }
 
-@media (max-width: 768px) {
+.icon {
+	font-size: 250%;
+	margin-right: 5px;
+}
+@media (width: 768px) {
 	.icon {
-		font-size: 250%;
+		font-size: 150%;
 	}
 }
 
