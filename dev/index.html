@@ -19,7 +19,7 @@
         <div class="col-md-8">
           <h1 class="text">Joshua Haan</h1>
           <h3 class="text">Web Developer</h3>
-          <p class="media-heading pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies. I have two years experience in product management and web content creation (with strong SEO), and I have a knack for learning new technologies and tools quickly and efficiently.</p>
+          <p class="media-heading pitch">{{ pitch }}</p>
           <h3>
             <span class="icon" v-for="link in socialLinks">
               <a v-bind:href="link.href" v-bind:title="link.name" target="_blank">
@@ -40,13 +40,17 @@
           <div class="thumbnail"> 
             <img v-bind:src="project.imageUrl"/>
             <div class="caption">
-              <h4 class="text">
-                <a v-bind:href="project.githubUrl" target="_blank">
+              <p>
+                <a v-bind:href="project.githubUrl" title="GitHub Repo" target="_blank">
                   <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                  See Code
                 </a>
-                <a v-if="project.linkUrl" v-bind:href="project.linkUrl" target="_blank">
+                <a v-if="project.linkUrl" v-bind:href="project.linkUrl" title="Project Link" target="_blank">
                   <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+                  See Site
                 </a>
+              </p>
+              <h4 class="text">
                 {{ project.name }}
               </h4>
               <p class="text">{{ project.description }}</p>

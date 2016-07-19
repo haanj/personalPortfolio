@@ -4,6 +4,7 @@ var vm = new Vue({
   data: {
     activeTab: 'projects',
     smoke: 'hello vue',
+    pitch: 'I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies. I have two years experience in product management and web content creation (with strong SEO), and I have a knack for learning new technologies and tools quickly and efficiently.',
     socialLinks: [
       {
         name: "Twitter",
