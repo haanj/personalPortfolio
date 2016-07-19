@@ -1,3 +1,6 @@
 [submodule "dev/projects/coffee"]
 	path = dev/projects/coffee
 	url = https://github.com/haanj/mockCafe.git
+[submodule "dev/projects/backstoryApp"]
+	path = dev/projects/backstoryApp
+	url = https://github.com/haanj/backstoryApp.git

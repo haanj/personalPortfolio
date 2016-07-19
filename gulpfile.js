@@ -42,6 +42,10 @@ gulp.task('copy-projects', () => {
   del.sync([output + 'coffee'])
   gulp.src('dev/projects/coffee/public/**')
     .pipe(gulp.dest(output + 'coffee'))
+
+  del.sync([output + 'backstoryApp'])
+  gulp.src('dev/projects/backstoryApp/public/**')
+    .pipe(gulp.dest(output + 'backstoryApp'))
 })
 
 gulp.task('copy-public', ['sass', 'copy-js', 'copy-projects', 'copy-html', 'copy-media'])
