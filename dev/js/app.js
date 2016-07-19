@@ -4,6 +4,33 @@ var vm = new Vue({
   data: {
     activeTab: 'projects',
     smoke: 'hello vue',
+    socialLinks: [
+      {
+        name: "Twitter",
+        href: "https://twitter.com/haan_joshua",
+        icon: "fa fa-twitter-square"
+      },
+      {
+        name: "GitHub",
+        href: "https://github.com/haanj",
+        icon: "fa fa-github-square"
+      },
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/haanj",
+        icon: "fa fa-linkedin-square"
+      },
+      {
+        name: "Email",
+        href: "mailto:joshua.haan@ymail.com",
+        icon: "fa fa-envelope-square"
+      },
+      {
+        name: "Resume",
+        href: "media/haanjResume.pdf",
+        icon: "fa fa-file-text"
+      }
+    ],
     projects: [
       {
         name: "CF Package Manager",

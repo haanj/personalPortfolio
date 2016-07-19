@@ -20,15 +20,15 @@
           <h1 class="text">Joshua Haan</h1>
           <h3 class="text">Web Developer</h3>
           <p class="media-heading pitch">I am a full-stack developer, primarily experienced with the MEAN (MongoDB, Express, Angular, Node) stack, but love learning and experimenting with other languages and technologies. I have two years experience in product management and web content creation (with strong SEO), and I have a knack for learning new technologies and tools quickly and efficiently.</p>
-          <h3 class="icon">
-            <a href="https://twitter.com/haan_joshua" title="Twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href="https://github.com/haanj/" title="GitHub" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/haanj" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href="mailto:joshuahaan@ymail.com" title="Email" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-            <a href="media/haanResume.pdf" title="Resume" target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+          <h3>
+            <span class="icon" v-for="link in socialLinks">
+              <a v-bind:href="link.href" v-bind:title="link.name" target="_blank">
+                <i v-bind:class="link.icon" aria-hidden="true"></i>
+              </a>
+            </span>
           </h3>
+
         </div>
-        
       </div>
     </div>
   </header>
