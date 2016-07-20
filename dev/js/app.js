@@ -18,7 +18,7 @@ var vm = new Vue({
       },
       {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/haanj",
+        href: "https://www.linkedin.com/in/haanj",
         icon: "fa fa-linkedin-square"
       },
       {
