@@ -34,6 +34,12 @@ var vm = new Vue({
     ],
     projects: [
       {
+        name: "Personal Portfolio",
+        description: "This portfolio website was created to display various project highlights. I used Vue.js, SCSS, and Twitter Bootstrap on the front end. The site is served using Node.js on a small Digital Ocean Droplet.",
+        imageUrl: "media/fog.jpg",
+        githubUrl: "https://github.com/haanj/personalPorfolio"
+      },
+      {
         name: "Character Backstory Generator",
         description: "AngularJS app that generates random roleplaying game character backstories to inspire players. A pretty straightforward demonstration in modular AngularJS design, featuring Webpack, object oriented programming principals, and custom services, controllers, and directives. The design uses Twitter Bootstrap with overrides written in SCSS.",
         imageUrl: "media/backstory.jpg",
