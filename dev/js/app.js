@@ -41,7 +41,7 @@ var vm = new Vue({
       },
       {
         name: "Character Backstory Generator",
-        description: "AngularJS app that generates random roleplaying game character backstories to inspire players. A pretty straightforward demonstration in modular AngularJS design, featuring Webpack, object oriented programming principals, and custom services, controllers, and directives. The design uses Twitter Bootstrap with overrides written in SCSS.",
+        description: "AngularJS app that generates random roleplaying game character backstories to inspire players. A pretty straightforward demonstration in modular AngularJS design, featuring Webpack, object oriented programming principals, and custom services, controllers, and directives. ",
         imageUrl: "media/backstory.jpg",
         githubUrl: "https://github.com/haanj/backstoryApp",
         linkUrl: "/backstoryApp/"
